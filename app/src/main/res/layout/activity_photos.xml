@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PhotosActivity"
+    android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/ivPhotoReceived"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_image_defaut"
+        android:contentDescription="@string/imagens" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPickGalleryPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/pick_gallery_photo"
+        android:layout_margin="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/take_picture_camera"
+        android:layout_margin="16dp"/>
+</LinearLayout>
